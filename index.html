@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الإجازات المرضية - صحة</title>
+
+<!-- Google Font قريب من الأصلي -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#3E73B8;
+    --primary-dark:#2f63a3;
+    --text-light:#8FA1B3;
+    --bg:#F3F5F7;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Cairo', sans-serif;
+    background:var(--bg);
+    direction:rtl;
+}
+
+/* ================= HEADER ================= */
+.header{
+    background:#f8f9fb;
+    padding:18px 22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.menu{
+    font-size:26px;
+    color:#7fa6c9;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-text{
+    line-height:1.2;
+}
+
+.logo-text .ar{
+    font-weight:700;
+    font-size:20px;
+    color:#444;
+}
+
+.logo-text .en{
+    font-size:15px;
+    color:#777;
+}
+
+.check{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:6px solid #7fa6c9;
+    border-left-color:transparent;
+    transform:rotate(45deg);
+}
+
+/* ================= MAIN ================= */
+
+.container{
+    padding:30px 22px;
+}
+
+.title{
+    font-size:40px;
+    font-weight:800;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.desc{
+    font-size:19px;
+    color:var(--text-light);
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+/* Inputs */
+.form-group{
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:18px;
+    font-size:18px;
+    border-radius:14px;
+    border:1px solid #d9d9d9;
+    background:#f9fafb;
+    outline:none;
+    transition:.2s;
+}
+
+input:focus{
+    border-color:var(--primary);
+    background:white;
+}
+
+/* Buttons */
+.btn{
+    width:65%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    font-size:20px;
+    cursor:pointer;
+    display:block;
+    margin:18px auto;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:var(--primary-dark);
+}
+
+.btn-secondary{
+    background:var(--primary-dark);
+    color:white;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    margin-top:60px;
+    background:var(--primary);
+    height:240px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+}
+
+.footer .logo-text .ar{
+    color:white;
+    font-size:28px;
+}
+
+.footer .logo-text .en{
+    color:white;
+    font-size:20px;
+}
+
+.footer .check{
+    border-color:white;
+    border-left-color:transparent;
+    margin-top:15px;
+}
+
+/* Desktop تحسين */
+@media(min-width:768px){
+    .container{
+        max-width:600px;
+        margin:auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="menu">☰</div>
+    <div class="logo">
+        <div class="logo-text">
+            <div class="ar">صحة</div>
+            <div class="en">Seha</div>
+        </div>
+        <div class="check"></div>
+    </div>
+</header>
+
+<section class="container">
+
+    <div class="title">الإجازات المرضية</div>
+
+    <div class="desc">
+        خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلب الإجازة ويمكنك طباعتها عن طريق تطبيق صحتي
+    </div>
+
+    <div class="form-group">
+        <input type="text" placeholder="رمز الخدمة">
+    </div>
+
+    <div class="form-group">
+        <input type="text" placeholder="رقم الهوية / الإقامة">
+    </div>
+
+    <button class="btn btn-primary">استعلام</button>
+    <button class="btn btn-secondary">رجوع للاستعلامات</button>
+
+</section>
+
+<footer class="footer">
+    <div class="logo">
+        <div class="logo-text">
+            <div class="ar">صحة</div>
+            <div class="en">Seha</div>
+        </div>
+    </div>
+    <div class="check"></div>
+</footer>
+
+</body>
+</html>
